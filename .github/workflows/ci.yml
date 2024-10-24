@@ -2,7 +2,13 @@ name: CI Workflow
 
 on:
   push:
+    branches:
+      - main
+      - dev
   pull_request:
+    branches:
+      - main
+      - dev
 jobs:
   # Job for building the backend (Go)
   backend:
